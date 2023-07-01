@@ -15,7 +15,7 @@ dotenv.config();
 dbConnection();
 
 console.log('Env Dot : process.env.PORT: ', process.env.PORT)
-const PORT = process.env.PORT | 8081;
+const PORT = process.env.PORT | 3000;
 
 //Add routes
 app.use('/api/v1', loginRoutes);
