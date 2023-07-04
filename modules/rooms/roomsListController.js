@@ -1,7 +1,7 @@
 const roomsService = require('../../services/roomsService');
 const constant = require('../../constants/constant')
 
-module.exports.roomsList = async (req, res, next)=>{
+module.exports.roomsListController = async (req, res, next)=>{
     let response = {};
 
     try {
@@ -19,7 +19,7 @@ module.exports.roomsList = async (req, res, next)=>{
     } catch (error) {
         response = constant.apiResponse.error;
         response.message = error.message;
-        console.log('Something went wrong: product contrller: createProduct: ', error)
+        console.log('Something went wrong: rooms contrller: rooms list: ', error)
         throw new Error(error);
     }
 

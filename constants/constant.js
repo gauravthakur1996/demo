@@ -19,7 +19,8 @@ module.exports = {
             create: 'Product created successfully.'
         },
         rooms: {
-            list: 'Rooms list fetched successfully.'
+            list: 'Rooms list fetched successfully.',
+            roomDetails: 'Room details fetched successfully.'
         }
     }
 }
